@@ -1,0 +1,121 @@
+/****************
+COLORS + BASE STYLES
+*****************/
+
+body{
+		background-color: #333;
+		color: #fff;
+		padding: 15px;
+}
+
+#date, #time{
+		font-size: 3em;
+}
+
+#time {
+		letter-spacing: 0.06em;
+}
+
+
+.shiftA{
+    background-color: #ff5a5a;
+}
+
+.shiftB{
+    background-color: #2d95ff;
+}
+
+.shiftC{
+    background-color: #ffc033;
+}
+
+.shiftD{
+    background-color: #4eba6f;
+}
+
+.shiftX{
+		background-color: #999;
+}
+
+.letter{
+		font-size: 6em;
+}
+
+/** week view **/
+
+.dayName{
+		font-size: 1.2em;
+}
+
+#weekShifts{
+		background-color: #bbb;
+		color: #000;
+}
+
+#scheduleTimes{
+		background-color: #333;
+		color: #fff;
+		padding: 20px 10px 0;
+}
+
+#scheduleTimes p {
+		padding: 20px 0 0;
+}
+
+.today{
+		background-color: #fff;
+}
+
+
+/***************************
+SHIFT BOX SIZING + SPACING
+***************************/
+
+.room{
+    height: 240px;
+    width: 45%;
+		margin: auto;
+		padding-top: 10px;
+		border-radius: 10px;
+		text-align: center;
+}
+
+#currentShifts{
+		margin: 40px auto;
+}
+
+.weekday{
+		border: 2px solid #333;
+		height: 200px;
+		padding: 5px 15px;
+}
+
+.room1Day {
+		width: 40%;
+		height: 140px;
+		margin: 5px 8px;
+}
+
+.room2Day {
+		width: 40%;
+		height: 150px;
+}
+
+.room2Shift{
+		width: 100%;
+		height: 70px;
+		margin: 5px 8px;
+}
+
+.room1Day, 
+.room2Shift{
+	border-radius: 3px;
+}
+
+/*dashboard meant for wider screens, but prevents the text wrapping
+of weekday names in case the view is too narrow*/
+@media only screen and (max-width: 1000px) {
+		.dayName{
+		font-size: 0.8em;
+	}
+}

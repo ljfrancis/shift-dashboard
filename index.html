@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+			
+			<link rel="stylesheet" href="styles/main.css">
+        
+		<title></title>
+	</head>
+	<body onload="updateDashboard()">
+      
+      	
+			<!-- Date and Clock --->
+        <div id="clock" class="container d-flex flex-row justify-content-between">
+            <h2 id="date"></h2>
+            <h2 id="time"></h2>
+        </div>
+        
+			<!-- Current Shifts --->
+        <div id="currentShifts" class="container">
+          <div class="row d-flex flex-row">
+            <div class="col room" id="room1">
+								<h2>Room 1</h2>
+            </div>
+            <div class="col room" id="room2">
+								<h2>Room 2</h2>
+            </div>
+          </div>
+        </div>
+			
+			<!-- Weekly View of Shifts -->
+				<div id="weekShifts" class="container">
+						<div class="row">
+								<div id="scheduleTimes" class="d-flex flex-column align-items-end">
+										<p>7:00</p>
+										<p>12:00</p>
+										<p>5:30</p>
+								</div>
+								<div class="col weekday">
+										<h4 class="dayName">Monday</h4>
+										<div class="d-flex flex-row">
+											<div class="room1Day"></div>
+											<div class="d-flex flex-column room2Day">
+												<div class="room2Shift"></div>
+												<div class="room2Shift"></div>
+											</div>
+										</div>
+								</div>
+								<div class="col weekday">
+										<h4 class="dayName">Tuesday</h4>
+										<div class="d-flex flex-row">
+											<div class="room1Day"></div>
+											<div class="d-flex flex-column room2Day">
+												<div class="room2Shift"></div>
+												<div class="room2Shift"></div>
+											</div>
+										</div>
+								</div>
+								<div class="col weekday">
+										<h4 class="dayName">Wednesday</h4>
+										<div class="d-flex flex-row">
+											<div class="room1Day"></div>
+											<div class="d-flex flex-column room2Day">
+												<div class="room2Shift"></div>
+												<div class="room2Shift"></div>
+											</div>
+										</div>
+								</div> 
+								<div class="col weekday">
+										<h4 class="dayName">Thursday</h4>
+										<div class="d-flex flex-row">
+											<div class="room1Day"></div>
+											<div class="d-flex flex-column room2Day">
+												<div class="room2Shift"></div>
+												<div class="room2Shift"></div>
+											</div>
+										</div>
+								</div>
+								<div class="col weekday">
+										<h4 class="dayName">Friday</h4>
+										<div class="d-flex flex-row">
+											<div class="room1Day"></div>
+											<div class="d-flex flex-column room2Day">
+												<div class="room2Shift"></div>
+												<div class="room2Shift"></div>
+											</div>
+										</div>
+								</div>
+						</div>
+				</div>
+        
+        
+        <script src="scripts/main.js"></script>
+      
+      <!-- Bootstrap -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</body>
+</html>
